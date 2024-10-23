@@ -114,7 +114,7 @@ When new events are detected which match the marketing team's promotional criter
 
     ---
 
-9.  Return to the authoring canvas dashboard for `StudentXXNewCustomerLargeOrders` within EP.
+9.  Return to the authoring canvas dashboard for `StudentXXNewCustomerLargeOrder` within EP.
     
     *   In the top-right corner of the interface, click the **Run** drop-down menu
         
