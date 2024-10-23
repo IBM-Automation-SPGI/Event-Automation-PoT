@@ -131,10 +131,8 @@ In the following module, review the necessary pre-requisites and setup instructi
 Agradecimientos
 ==========
 
-**Christopher Bienko** (Principal, Learning Content Development, IBM Application Modernization) introduces the objectives and curriculum for _IBM Event Automation for Technical Sales Level 3_.
+**Christopher Bienko** (Principal, Learning Content Development, IBM Application Modernization)
 
 Special thanks to Callum Jackson for permission to adapt content from _Using event automation to create Kafka streams from IBM MQ_ for the purposes of this lab.
-
-**Additional ways to watch:** [Seismic replay available for download.](https://ibm.seismic.com/Link/Content/DCB62pRqMG7jHGT2P6TRjF9b6qF8) \[4 minutes\]
 
 Copyright © 2024 IBM
