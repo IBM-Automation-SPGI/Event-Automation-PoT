@@ -128,7 +128,7 @@ In the following module, review the necessary pre-requisites and setup instructi
 
 * * *
 
-Agradecimientos
+Acknowledgements
 ==========
 
 **Christopher Bienko** (Principal, Learning Content Development, IBM Application Modernization)
