@@ -131,7 +131,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 8.  Now select the Topics that will be made available for browsing within the Event Endpoint Management catalog.
     
-    *   Toggle (select) _both_ the and rename `CUSTOMERS` and `STUDENTXX.ORDERS` topics
+    *   Toggle (select) _both_ the  `CUSTOMERS` and `STUDENTXX.ORDERS` topics
         
     *   Set the alias values to `STUDENTXX.CUSTOMERS` and `STUDENTXX.ORDERS`
         
