@@ -214,7 +214,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 14. Within the _Details_ tab, provide the following customizations:
     
-    *   **Order name**: `StudentXX Customer Access`
+    *   **Option name**: `StudentXX Customer Access`
         
     *   **Alias**: `STUDENTXX.CUSTOMERS`
         

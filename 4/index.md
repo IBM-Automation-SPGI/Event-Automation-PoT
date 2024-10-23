@@ -23,7 +23,7 @@ When new events are detected which match the marketing team's promotional criter
 
 * * *
 
-1.  Return to the authoring canvas dashboard for `NewCustomerLargeOrders` within the **IBM Event Processing (EP)** tab.
+1.  Return to the authoring canvas dashboard for `StudentXXNewCustomerLargeOrder` within the **IBM Event Processing (EP)** tab.
     <br>
 
 2.  From the list of nodes along the left-side interface, drag and drop the **Event destination** node into the canvas. Place it far to the right of the other nodes within the table . You can use your mouse wheel to resize the table if necessary.
@@ -114,7 +114,7 @@ When new events are detected which match the marketing team's promotional criter
 
     ---
 
-9.  Return to the authoring canvas dashboard for `NewCustomerLargeOrders` within EP.
+9.  Return to the authoring canvas dashboard for `StudentXXNewCustomerLargeOrders` within EP.
     
     *   In the top-right corner of the interface, click the **Run** drop-down menu
         

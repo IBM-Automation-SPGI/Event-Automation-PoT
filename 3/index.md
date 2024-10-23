@@ -41,11 +41,10 @@ If these conditions can be met, the marketing team will be able to create an act
     
     <p>A flow begins with one or multiple event sources which represent inbound events. For the purposes of this demonstration, you will leverage the STUDENTXX.ORDERS event stream that was defined in the previous module. You will do so using EP's intuitive, no-code authoring canvas.</p>
     <br>
-
-    <img src="../images/3-1.png" alt="image">
-    
     </details>
     <br>
+
+    <img src="../images/3-1.png" alt="image">
 
 3.  For **Name**  , specify `StudentXXNewCustomerLargeOrder` and then click **Create** .
     
@@ -203,7 +202,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ---
 
-13. Return to the `NewCustomerLargeOrder` canvas and drag a new **Event Source**  (from the left-hand interface) into the canvas, placing it just below the `Orders` source.
+13. Return to the `StudentXXNewCustomerLargeOrder` canvas and drag a new **Event Source**  (from the left-hand interface) into the canvas, placing it just below the `Orders` source.
     
     With your cursor, hover over the new `source_1` node and then click the **Edit** (pencil) icon in the top-right corner of the tile to begin modifying the node.
     
@@ -392,7 +391,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ---
 
-28. Back on the canvas for `NewCustomerLargeOrders`, scroll down along the left-hand interface until you locate the **Interval Join** node.
+28. Back on the canvas for `StudentXXNewCustomerLargeOrder`, scroll down along the left-hand interface until you locate the **Interval Join** node.
     
     Drag and drop this node  to the far right-hand edge of the authoring canvas.
     
