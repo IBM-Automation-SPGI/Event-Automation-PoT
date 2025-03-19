@@ -12,7 +12,7 @@ Building a self-service catalog of events with Event Endpoint Management
 
 <br>
 
-* * * 
+* * *
 
 Building a self-service event catalog with IBM Event Endpoint Management
 ========================================================================
@@ -28,9 +28,9 @@ In this module, Focus' integration team will utilize **IBM Event Endpoint Manage
 <p>OpenAPI and AsyncAPI both represent formalized specifications for describing APIs, but the data source feeding these APIs and the style in which that data is communicated differs between the two. **This is important in the context of IBM Event Endpoint Management.**</p>
 
 <p> · OpenAPI is designed for describing RESTful API endpoints, focusing on synchronous client-server communication: a client sends a request and waits for a direct response from a server. Therefore, OpenAPI is well-suited for standard web services where a client interacts with a server in a request-response model.</p>
-    
+
 <p> · AsyncAPI is built for working with event-driven, asynchronous APIs that rely on asynchronous communication patterns: publish and subscribe, event streaming, and message-driven APIs. It is well-suited for Internet of Things (IoT) applications, real-time data processing use cases, or other scenarios where communication doesn't follow the typical direct request-response (synchronous and RESTful) API pattern.</p>
-    
+
 
 <p>Put simply, the key difference between the two is their differing communication patterns. OpenAPI is designed for synchronous messaging (following the request-response pattern) and AsyncAPI is intended for asynchronous communication (event-driven) patterns.</p>
 
@@ -48,99 +48,99 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 
 1.  Since this is the first time that the integration team has needed to import Topics from IBM Event Streams, they must first register the cluster within IBM Event Endpoint Manager (EEM):
-    
+
     * Switch over to the EEM tab within your web browser
-        
+
     * Click the _Hide Welcome_ text to collapse the tutorials at the top of the page
-        
+
     * From the left-hand side of the interface, click **Topic**
-        
-    
-      
+
+
+
     [![](../images/2-1a.png)](../images/2-1a.png)<br><br><br>
-    
+
 
 
 2.  From the right side of the interface, click the blue **Add Topic** button. A configuration tool for importing a Topic into EEM will load.
-    
+
     *   _Interaction_ settings: Click the **Consume events** and then **Next** to proceed
-        
+
     *   _Cluster connection_ settings: Click the **Add new cluster** button
-        
-    
-      
+
+
+
     [![](../images/eem-topic-creation.png)](../images/eem-topic-creation.png)
-    
+
     [![](../images/2-2.png)](../images/2-2.png)<br><br><br>
-    
+
 
 
 3.  Set the _Cluster Name_ variable to `StudentXX IBM Event Streams` and click **Next** to continue.
-    
-      
+
+
     [![](../images/2-3.png)](../images/2-3.png)<br><br><br>
-    
+
 
 
 4.  Additional details about the connection are required: the endpoint address, certificates required for secure communication with the cluster, and authentication credentials.
-    
-    *   Set the _Servers_ variable to `ademo-es-kafka-bootstrap.cp4i.svc:9095`
-        
+
+    *   Set the _Servers_ variable to `es-demo-kafka-bootstrap.tools.svc:9095`
+
     *   Click **Next** to continue
-        
-    
-      
+
+
+
     [![](../images/2-4.png)](../images/2-4.png)<br><br><br>
-    
+
 
 
 5.  Click (to add a checkmark) on the **Accept all certificates** toggle, then click **Next**.
-    
-      
+
+
     [![](../images/2-5a.png)](../images/2-5a.png)
-    
+
     [![](../images/2-5b.png)](../images/2-5b.png)<br><br><br>
-    
+
 
 
 6.  Next, configure details regarding _Credentials_.
-    
+
     *   The _Security Protocol_ field should remain at the default value of `SCRAM-SHA-512`
-        
+
     *   _Username_ should be set to `es-admin`
-        
-    *   _Password_ must match the **IBM Event Streams** password generated in the Setup module. This password is unique to your particular environment.
-        
+
+    *   _Password_ must match the **IBM Event Streams** password generated in the Setup module. This password is unique to your particular environment and will be shared by the instructor.
+
     *   When ready, click **Add Cluster**
-        
-    
-      
+
+
+
     [![](../images/2-6.png)](../images/2-6.png)<br><br><br>
-    
+
 
 
 7.  The web browser will return to the _Add Topic_ configuration page from Step 2.
-    
+
     *   Under the _Cluster connection_ header, select the `StudentXX IBM Event Streams` connection defined earlier
-        
+
     *   When ready, click **Next**
-      
+
     [![](../images/2-7.png)](../images/2-7.png)<br><br><br>
-    
+
 
 
 8.  Now select the Topics that will be made available for browsing within the Event Endpoint Management catalog.
-    
-    *   Toggle (select) _both_ the  `CUSTOMERS` and `STUDENTXX.ORDERS` topics
-        
+
+    *   Toggle (select) _both_ the  `CUSTOMERS.NEW` and `STUDENTXX.ORDERS` topics
+
     *   Set the alias values to `STUDENTXX.CUSTOMERS` and `STUDENTXX.ORDERS`
-        
+
     *   When ready, click **Add Topic**
-        
-    
-      
+
+
+
     [![](../images/2-8.png)](../images/2-8.png)<br><br><br>
-    
+
 
     ---
 
@@ -153,35 +153,35 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     ---
 
 9.  From the EEM dashboad, drill down into **Topics** as before and click the name of the `STUDENTXX.CUSTOMERS` topic.
-    
-      
+
+
     [![](../images/2-9.png)](../images/2-9.png)<br><br><br>
-    
+
 
 
 10. Click the blue **Edit information** on the right-hand side of the page.
-    
-      
+
+
     [![](../images/2-10.png)](../images/2-10.png)<br><br><br>
-    
+
 
 
 11. Within the _Overview information_ tab:
-    
+
     *   Scroll down until you reach the **Description** field and enter the following text: `Events generated by the customer management system. A new event is created for each new user registration.`
-        
+
     *   Scroll further down until you reach the **Tags** field and enter `customer`
-        
+
     *   For the **Contact Email**\[C\] field, enter `studentXX@focus.corp`
-        
+
     *   Click the **Event Information**\[D\] tab from the left side of the interface
-        
+
     *   **DO NOT CLICK _SAVE_** — if you _did_ click save, return to the previous screen by clicking the **Edit information** button again
-        
-    
-      
+
+
+
     [![](../images/2-11.png)](../images/2-11.png)<br><br><br>
-    
+
 
 12. Within the _Event information_ tab, scroll down until you locate the **Sample message** field. Here you will provide a representation of a typical message on the `STUDENTXX.CUSTOMERS` event stream.
 
@@ -195,62 +195,62 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     }
     ```
 
-  
+
     When ready, click **Save**\[C\] to finalize both the _Overview Information_ and _Event Information_ configuration settings.
 
-  
+
     [![](../images/2-12.png)](../images/2-12.png)<br><br><br>
 
 
 13. The web browser will return to the `STUDENTXX.CUSTOMERS` Topic overview.
-    
+
     *   From the three tabs at the top of the screen, click **Options**
-        
+
     *   Click the blue **Create Options** button
-        
+
     [![](../images/2-13.png)](../images/2-13.png)<br><br><br>
-    
+
 
 
 14. Within the _Details_ tab, provide the following customizations:
-    
+
     *   **Option name**: `StudentXX Customer Access`
-        
+
     *   **Alias**: `STUDENTXX.CUSTOMERS`
-        
+
     *   **Description**: `Self-service access to the customer event stream`
-        
-    
+
+
     When ready, click **Next**.
-    
-      
+
+
     [![](../images/2-14.png)](../images/2-14.png)<br><br><br>
-    
+
 
 
 15. Leave the _Controls_ tab empty (`No data`) and click **Next** to proceed.
-    
-      
+
+
     [![](../images/2-15.png)](../images/2-15.png)<br><br><br>
-    
+
 
 
 16. The _Publish option_ tab will give you a final opportunity to review the `STUDENTXX.CUSTOMERS` topic before publishing for other users of EEM.
-    
+
     *   Within the blue _Option Status_ field, click the **Publish** button
-        
-    *   Further down the panel, under the _Available gateways_ field, verify that the `production` option is pre-selected
-        
+
+    *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected
+
     *   When ready, click **Publish**\[C\] to finalize publication of the `STUDENTXX.CUSTOMERS` topic
-        
-    
-      
+
+
+
     [![](../images/eem-topic-publish-1.png)](../images/eem-topic-publish-1.png)
-    
+
     [![](../images/eem-topic-publish-2.png)](../images/eem-topic-publish-2.png)
-    
+
     [![](../images/2-16c.png)](../images/2-16c.png)<br><br><br>
-    
+
 
     ---
 
@@ -262,10 +262,10 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     <br>
 
 17. From the EEM dashboard, drill down into **Topics** and then click the name `STUDENTXX.ORDERS`\[B\].
-    
-      
+
+
     [![](../images/2-17.png)](../images/2-17.png)<br><br><br>
-    
+
 
 
 18. Click on the **Edit information** button.
@@ -273,21 +273,21 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     <br>
 
 19. Within the _Overview information_ tab:
-    
+
     *   Scroll down until you reach the **Description** field and enter the following text: `Events generated by the customer management system. An event will be emitted for every new order that is made.`
-        
+
     *   Scroll further down until you reach the **Tags** field and enter `orders`
-        
+
     *   For the **Contact Email**\[C\] field, enter `studentXX@focus.corp`
-        
+
     *   Click the **Event Information**\[D\] tab from the left side of the interface
-        
+
     *   **DO NOT CLICK _SAVE_** — if you _did_ click save, return to the previous screen by clicking the **Edit information** button again
-        
-    
-      
+
+
+
     [![](../images/2-19.png)](../images/2-19.png)<br><br><br>
-    
+
 
 20. Within the _Event information_ tab, scroll down until you locate the **Sample message** field. Here you will provide a representation of a typical message on the `STUDENTXX.ORDERS` event stream.
 
@@ -305,39 +305,39 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     "customer": "Reed McKenzie DDS"
     }
     ```
-  
+
     When ready, click **Save** to finalize both the _Overview Information_ and _Event Information_ configuration settings.
 
-  
+
     [![](../images/2-20.png)](../images/2-20.png)<br><br><br>
 
 
 21. The web browser will return to the `STUDENTXX.ORDERS` Topic overview.
-    
+
     *   From the three tabs at the top of the screen, click **Options**
-        
+
     *   Click the blue **Create Options** button
-        
-    
-      
+
+
+
     [![](../images/2-21.png)](../images/2-21.png)<br><br><br>
-    
+
 
 
 22. Within the _Details_ tab, provide the following customizations:
-    
+
     *   **Order name**: `StudentXX Order Access`
-        
+
     *   **Alias**: `STUDENTXX.ORDERS`
-        
+
     *   **Description**: `Self-service access to the order event stream`
-        
-    
+
+
     When ready, click **Next**.
-    
-      
+
+
     [![](../images/2-22.png)](../images/2-22.png)<br><br><br>
-    
+
 
 
 23. Leave the _Controls_ tab empty (`No data`) and click **Save** to proceed.
@@ -345,21 +345,21 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     <br>
 
 24. The _Publish option_ tab will give you a final opportunity to review the `STUDENTXX.ORDERS` topic before publishing for other users of EEM.
-    
+
     *   Within the blue _Option Status_ field, click the **Publish** button
-        
-    *   Further down the panel, under the _Available gateways_ field, verify that the `production` option is pre-selected
-        
+
+    *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected
+
     *   When ready, click **Publish** to finalize publication of the `STUDENTXX.ORDERS` topic
-        
-    
-      
+
+
+
     [![](../images/eem-topic-publish-1.png)](../images/eem-topic-publish-1.png)
-    
+
     [![](../images/eem-topic-publish-2.png)](../images/eem-topic-publish-2.png)
-    
+
     [![](../images/2-24b.png)](../images/2-24b.png)<br><br><br>
-    
+
 
     ---
 
@@ -372,48 +372,48 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 
 25. Return to the EEM dashboard and drill down into **Catalog**\[A\], then click the name `STUDENTXX.CUSTOMERS` from the table.
-    
-      
+
+
     [![](../images/2-25.png)](../images/2-25.png)<br><br><br>
-    
+
 
 
 26. Click the **Generate access credentials** button in the top-right corner of the page.
-    
-      
+
+
     [![](../images/2-26.png)](../images/2-26.png)<br><br><br>
-    
+
 
 
 27. Provide an email address for the _Contact details_ field: `studentXX@focus.corp`
-    
+
     When ready, click **Generate**.
-    
-      
+
+
     [![](../images/2-27.png)](../images/2-27.png)<br><br><br>
-    
+
 
 
 28. Access credentials for `STUDENTXX.CUSTOMERS` will be generated immediately and displayed within the web browser.
-    
+
     *   Record the `Username` and `Password` values to a notepad for reference later
-        
+
     *   Alternatively, save the credentials as a JSON file (using the **Download as JSON** button) on your local machine  
-        
-    
-      
-    
+
+
+
+
     <span style="color:orange"> RECORD THE ACCESS CREDENTIALS</span>
-    
+
     _Don't proceed with the lab guide instructions before recording the `STUDENTXX.CUSTOMERS` access credentials. These values cannot be referenced again once this window is closed. You can always generate new credentials again later, but it will require repeating Steps 25-27._
-    
+
     [![](../images/2-28.png)](../images/2-28.png)<br><br><br>
-    
+
 
 29. Generate access credentials for the `STUDENTXX.ORDERS` catalog in the same way done for `STUDENTXX.CUSTOMERS`:
-    
+
     *   Return to the EEM dashboard
-        
+
     *   Drill down into **Catalog** and then click `STUDENTXX.ORDERS`
     <br>   
 
@@ -422,14 +422,14 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     <br>
 
 31. Provide an email address for the _Contact details_ field: `studentXX@focus.corp`
-    
+
     When ready, click **Generate**.
     <br>
 
 32. Access credentials for `STUDENTXX.ORDERS` will be generated immediately within the web browser:
-    
+
     *   Record the `Username` and `Password` values to a notepad for reference later
-        
+
     *   Alternatively, save the credentials as a JSON file (using the **Download as JSON** button) on your local machine
     <br>
 
