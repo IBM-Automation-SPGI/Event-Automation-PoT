@@ -170,14 +170,12 @@ If these conditions can be met, the marketing team will be able to create an act
 
     [![](../images/event-source-format-1.png)](../images/event-source-format-1.png)
 
-    [![](../images/event-source-format-3.png)](../images/event-source-format-3.png)<br><br><br>
-
 
 11. For the next tab, _Key and headers_, leave defaults and click **Next**.
 
 12. You will have a final opportunity to review and confirm the event source configuration.
 
-    *   Go to the **Node name** field and enter `Orders`
+    Go to the **Node name** field and enter `Orders`
 
     Click **Configure** to finalize the configuration of the `Orders` event source.
 
