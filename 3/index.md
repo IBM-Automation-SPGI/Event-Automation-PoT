@@ -94,7 +94,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   Just below, within the _Servers_ table, is the full address of the `STUDENTXX.ORDERS` event topic
 
-    *   Copy the _full_ address (`ademo-event-gw-ibm...`)  to your notepad for reference later
+    *   Copy the _full_ address (`eem-demo-gw-ibm...`)  to your notepad for reference later
 
     *   When ready, switch back to the **IBM Event Processing** tab with your web browser
 
@@ -220,17 +220,15 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   Just below, within the _Servers_ table, is the full address of the `STUDENTXX.CUSTOMERS` event topic
 
-    *   Copy the _full_ address (`ademo-event-gw-ibm...`) to your notepad for reference later
+    *   Copy the _full_ address (`eem-demo-gw-ibm...`) to your notepad for reference later
 
     *   When ready, switch back to the **IBM Event Processing** tab with your web browser
 
     <br>
 
-16. Back within EP: the first tab, _Details_, needs additional information to configure the node.
+16. Back within EP: the first tab, _Cluster Connection_, needs additional information to configure the node.
 
-    *   Scroll down to the **Node name** field and enter ` New Customers`
-
-    *   Further down, under the _Connect to Kafka cluster_ header, paste the full address copied in Step 15 into the **Server**  field
+    *   Under the _Connect to Kafka cluster_ header, paste the full address copied in Step 15 into the **Server**  field
 
     *   Click **Next**
 
@@ -239,16 +237,7 @@ If these conditions can be met, the marketing team will be able to create an act
     [![](../images/3-16.png)](../images/3-16.png)<br><br><br>
 
 
-
-17. The event source must be configured to allow certificates used by the event stream.
-
-    *   **Accept certificates** (by clicking the toggle button as shown in the screenshot below)
-
-    *   Click **Next**
-
-    <br>
-
-18. The second tab, _Access credentials_, requires authentication details for the EEM event source.
+17. The second tab, _Access credentials_, requires authentication details for the EEM event source.
 
     *   Keep the **Select security mechanism** variable as its default value: `PLAIN`
 
@@ -258,7 +247,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     <br>
 
-19. The third tab, _Topic selection_, will ask which topic(s) to ingest from the event source.
+18. The third tab, _Topic selection_, will ask which topic(s) to ingest from the event source.
 
     *   Available topics will already be displayed within the configuration tool
 
@@ -272,7 +261,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-20. The fourth tab, _Define event structure_, will automatically recognize the expected JSON data structure of events ingested from the event source.
+19. The fourth tab, _Message Format_, will automatically recognize the expected JSON data structure of events ingested from the event source.
 
     *   _Message format_ may be left as the `JSON` value
 
@@ -294,10 +283,12 @@ If these conditions can be met, the marketing team will be able to create an act
 
     [![](../images/event-source-format-2.png)](../images/event-source-format-2.png)
 
-    [![](../images/event-source-format-3.png)](../images/event-source-format-3.png)<br><br><br>
 
+20. For the next tab, _Key and headers_, leave defaults and click **Next**.
 
 21. You will have a final opportunity to review and confirm the event source configuration.
+
+    Go to the **Node name** field and enter `New Customers`
 
     Click **Configure** to finalize the configuration of the `New Customers` event source.
 
