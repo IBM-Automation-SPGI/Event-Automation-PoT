@@ -90,7 +90,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   Drill down into the `STUDENTXX.ORDERS` topic by clicking on the name
 
-    *   Scroll down the topic summary page until you reach the **Access Information** section
+    *   Scroll down the topic summary page until you reach the **Selected event endpoint server URLs** section
 
     *   Just below, within the _Servers_ table, is the full address of the `STUDENTXX.ORDERS` event topic
 
@@ -216,7 +216,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   Drill down into the `STUDENTXX.CUSTOMERS` topic by clicking on the name
 
-    *   Scroll down the topic summary page until you reach the **Access Information** section
+    *   Scroll down the topic summary page until you reach the **Selected event endpoint server URLs** section
 
     *   Just below, within the _Servers_ table, is the full address of the `STUDENTXX.CUSTOMERS` event topic
 

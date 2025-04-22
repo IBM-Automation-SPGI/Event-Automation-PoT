@@ -85,7 +85,7 @@ Both the order management system and its payment gateway system are currently us
 7.  The queue will already have been populated with multiple _Messages_. Click on any of the **Timestamp** names available in the table (something similar to `Feb 21, 2024 at 5:12:00 PM`) to pull open a _Message Details_ panel.
 
     *   Scroll down the _Message Details_ panel until you reach **Application Data**
-    *   Inspect the contents of the packet, which is a series of key-value pairs: you should see details about the order `id`, `customer`, `customerid`, `description`, `price`, `quantity`, `region`, and `ordertime`
+    *   Inspect the contents of the packet, which is a series of key-value pairs: you should see details about the order `id`, `customer`, `customerid`, `description`, `price`, `quantity`, `region`, and `ordertime`. The order of the key-value pairs may be different.
     *   **Close** the _Message Details_ panel by clicking the `X` in the top-right corner or the grey `Close` button
 
 

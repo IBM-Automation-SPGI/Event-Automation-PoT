@@ -378,7 +378,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 
 
-26. Click the **Generate access credentials** button in the top-right corner of the page.
+26. Click the **Subscribe**  button.
 
 
     [![](../images/2-26.png)](../images/2-26.png)<br><br><br>
@@ -387,7 +387,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 27. Provide an email address for the _Contact details_ field: `studentXX@focus.corp`
 
-    When ready, click **Generate**.
+    When ready, click **Subscribe**.
 
 
     [![](../images/2-27.png)](../images/2-27.png)<br><br><br>
