@@ -30,7 +30,7 @@ Configuring IBM MQ to clone customer order data
 
 Both the order management system and its payment gateway system are currently using IBM MQ message queues for exchanging customer order data. The integration team will need to tap into this message exchange, clone each of the orders being handled across IBM MQ, and then publish those messages into a new event stream.
 
-1.  Open the **IBM MQ** dashboard with a web browser.
+1.  Open the **IBM MQ** dashboard with a web browser. Use the MQ UI URL provided by the instructor.
 
     From the left-hand side interface, drill down into the **Manage** tab.
 
