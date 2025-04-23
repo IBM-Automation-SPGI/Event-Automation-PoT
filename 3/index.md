@@ -20,7 +20,7 @@ Using IBM Event Processing no-code editors to configure the solution
 
 Focus Corporation's marketing department now has a fully configured, self-service catalog of event stream data available within **IBM Event Endpoint Management (EEM)**.
 
-At this stage, work will transition from the integration team to the domain of the marketing team. Focus' marketing team will utilize **IBM Event Processing (EP)** to correlate any newly-created customer accounts with first-time purchase orders that total over $50 USD in value. Furthermore, these correlated transactions will need to be identified within a 24-hour window of when they occur.
+At this stage, work will transition from the integration team to the domain of the marketing team. Focus' marketing team will utilize **IBM Event Processing (EP)** to correlate any newly-created customer accounts with first-time purchase orders that total over **$25** USD in value. Furthermore, these correlated transactions will need to be identified within a 24-hour window of when they occur.
 
 If these conditions can be met, the marketing team will be able to create an actionable plan for putting high-value promotional offers in front of first-time customers in a timely manner — which should translate to more sales revenue through Focus' digital storefront.
 
@@ -302,7 +302,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ### Filtering event sources to match specific criteria
 
-    With the event source fully configured within EP, you can now begin tailoring the event processing flow to filter on orders where the value exceeds $50 USD.
+    With the event source fully configured within EP, you can now begin tailoring the event processing flow to filter on orders where the value exceeds **$25** USD.
 
     ---
 
@@ -326,7 +326,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-24. With the `Orders` event source node connected to the `filter_1` operation node, you must utilize the Filter node's expression builder to remove orders that are _less than_ $50 USD in value. This will allow the marketing team's application to target only first-time customers with spending patterns of $50 USD or more.
+24. With the `Orders` event source node connected to the `filter_1` operation node, you must utilize the Filter node's expression builder to remove orders that are _less than_ **$25** USD in value. This will allow the marketing team's application to target only first-time customers with spending patterns of **$25** USD or more.
 
     Hover over the `filter_1` node with your mouse pointer and click the **Edit** (pencil) icon.
     <br>
@@ -350,11 +350,11 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   Condition: `Is greater than`
 
-    *   Value: `50`
+    *   Value: `25`
 
     *   Click the **Add to expression** button
 
-    *   The expression builder will automatically translate your statements into a syntactically-correct filter statement: `'price' > 50`
+    *   The expression builder will automatically translate your statements into a syntactically-correct filter statement: `'price' > 25`
 
     *   Click the **Configure**  button at the bottom of the panel to finalize the filter configuration
 
@@ -367,7 +367,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ### Performing a JOIN across two event sources
 
-    The marketing team needs to "JOIN" the filtered `Order` stream data to records of `New Customers` in order to correctly identify first-time purchasers that placed an order for over $50 USD in the last 24 hours. Use EP's authoring canvas to carry out the necessary JOIN operation.
+    The marketing team needs to "JOIN" the filtered `Order` stream data to records of `New Customers` in order to correctly identify first-time purchasers that placed an order for over **$25** USD in the last 24 hours. Use EP's authoring canvas to carry out the necessary JOIN operation.
 
     ---
 
@@ -444,12 +444,12 @@ If these conditions can be met, the marketing team will be able to create an act
 
     <p> · Since the `New Customer` sign-up event must logically occur before a purchase, it is considered a triggering event</p>
 
-    <p> · Therefore, when a signal for an `Order` purchase of over $50 (the detected event) is received, the JOIN logic condition will be triggered for the two event streams</p>
+    <p> · Therefore, when a signal for an `Order` purchase of over **$25** (the detected event) is received, the JOIN logic condition will be triggered for the two event streams</p>
     </details>
 
     <br>
 
-34. Under the _Time window condition_, you can define the time interval "window" where detected events are considered viable for a promotional offer from the marketing team. To meet the criteria, a purchase of over $50 USD must be made by a first-time customer within a 24 hour window of creating an account.
+34. Under the _Time window condition_, you can define the time interval "window" where detected events are considered viable for a promotional offer from the marketing team. To meet the criteria, a purchase of over **$25** USD must be made by a first-time customer within a 24 hour window of creating an account.
 
     *   Look for the **Event to detect** field and select the `FilterLargeOrders (event_time)` option from the drop-down menu
 
