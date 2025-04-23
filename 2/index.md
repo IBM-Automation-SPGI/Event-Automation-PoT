@@ -243,7 +243,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     *   Within the blue _Option Status_ field, click the **Publish** button
 
     *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected.
-    Note: If you see a message in this panel saying that the gateway is not available or pending validation, click ***Cancel***, refresh the browser page (F5), and try again the **Publish** action.
+    Note: If you see a message in this panel stating that the gateway is not available or pending validation, click ***Cancel***, refresh the browser page (F5), and try again the **Publish** action on the **Option** definition.
 
     *   When ready, click **Publish**\[C\] to finalize publication of the `STUDENTXX.CUSTOMERS` topic
 
@@ -265,7 +265,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     ---
     <br>
 
-17. From the EEM dashboard, drill down into **Topics** and then click the name `STUDENTXX.ORDERS`\[B\].
+17. From the EEM dashboard, go back to the ** Manage Topic** page and then find ad click the name `STUDENTXX.ORDERS`\[B\].
 
 
     [![](../images/2-17.png)](../images/2-17.png)<br><br><br>
@@ -353,6 +353,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     *   Within the blue _Option Status_ field, click the **Publish** button
 
     *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected
+    Note: If you see a message in this panel stating that the gateway is not available or pending validation, click ***Cancel***, refresh the browser page (F5), and try again the **Publish** action on the **Option** definition.
 
     *   When ready, click **Publish** to finalize publication of the `STUDENTXX.ORDERS` topic
 
