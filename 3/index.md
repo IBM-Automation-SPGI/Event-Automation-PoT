@@ -26,7 +26,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 * * *
 
-1.  With your web browser, access the **IBM Event Processing** dashboard.
+1.  With your web browser, open the **IBM Event Processing** UI URL in a new tab.
 
     Dismiss any welcome screens or tutorials that are prompted after first logging in by clicking the **Hide Welcome** text in the bottom-left corner of the interface.
     <br>
@@ -37,7 +37,7 @@ If these conditions can be met, the marketing team will be able to create an act
     <summary><span style="color:lightblue">EVENT PROCESSING FLOWS</span></summary>
 
     <br>
-    <p>An event processing flow ingests a stream of events, analyzes that input, and takes automatic actions (defined by the user) in response to those conditions.</p>
+    <p>An event processing flow ingests streams of events, analyzes that input, and takes automatic actions (defined by the user) in response to conditions.</p>
 
     <p>A flow begins with one or multiple event sources which represent inbound events. For the purposes of this demonstration, you will leverage the STUDENTXX.ORDERS event stream that was defined in the previous module. You will do so using EP's intuitive, no-code authoring canvas.</p>
     <br>
@@ -92,9 +92,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   Scroll down the topic summary page until you reach the **Selected event endpoint server URLs** section
 
-    *   Just below, within the _Servers_ table, is the full address of the `STUDENTXX.ORDERS` event topic
-
-    *   Copy the _full_ address (`eem-demo-gw-ibm...`)  to your notepad for reference later
+    *   Copy the _full_ address (`eem-demo-gw-ibm...`) to your notepad for reference later. Please note this server endpoint correspond to the Event Gateway instance ***egw-group***, where the topic ***Option*** was published in the previous lab.
 
     *   When ready, switch back to the **IBM Event Processing** tab with your web browser
 
@@ -106,7 +104,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-7.  Back within EP: the first tab, _Cluster Connection_, needs additional information to configure the node.
+7.  Back within EP: the first step, _Cluster Connection_, needs additional information to configure the node.
 
 
     *   Paste the full address copied in Step 6 into the **Server** field
@@ -115,11 +113,11 @@ If these conditions can be met, the marketing team will be able to create an act
 
     <br>
 
-8.  The second tab, _Access credentials_, requires authentication details for the EEM event source.
+8.  The second step, _Access credentials_, requires authentication details for the EEM event source.
 
     *   Keep the **Select security mechanism** variable as its default value: `PLAIN`
 
-    *   For **Username** and **Password** , supply the credentials for the `STUDENTXX.ORDERS` topic (Step 32 of Module 2)
+    *   For **Username** and **Password** , supply the credentials for the `STUDENTXX.ORDERS` topic (generated in Step 32 of Lab 2)
 
     *   Click **Next**
 
@@ -129,7 +127,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-9. The third tab, _Topic selection_, asks for which topic(s) to ingest from the event source
+9. The third step, _Topic selection_, asks for which topic(s) to ingest from the event source
 
     *   Available topics will already be displayed within the configuration tool
 
@@ -143,7 +141,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-10. The fourth tab, _Message Format_, will automatically recognize the expected JSON data structure of events ingested from the event source.
+10. The fourth step, _Message Format_, will automatically recognize the expected JSON data structure of events ingested from the event source.
 
     *   _Message format_ may be left as the `JSON` value
 
@@ -171,7 +169,7 @@ If these conditions can be met, the marketing team will be able to create an act
     [![](../images/event-source-format-1.png)](../images/event-source-format-1.png)
 
 
-11. For the next tab, _Key and headers_, leave defaults and click **Next**.
+11. For the next step, _Key and headers_, leave defaults and click **Next**.
 
 12. You will have a final opportunity to review and confirm the event source configuration.
 
@@ -187,7 +185,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ### Configuring an event source for New Customers
 
-    The configurations performed for the `STUDENTXX.ORDERS` topic now (Steps 4 – 12) must now be repeated for the `STUDENTXX.CUSTOMERS` topic.
+    The configurations performed for the `STUDENTXX.ORDERS` topic (Steps 4 – 12) must now be repeated for the `STUDENTXX.CUSTOMERS` topic.
 
     ---
 
@@ -218,9 +216,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   Scroll down the topic summary page until you reach the **Selected event endpoint server URLs** section
 
-    *   Just below, within the _Servers_ table, is the full address of the `STUDENTXX.CUSTOMERS` event topic
-
-    *   Copy the _full_ address (`eem-demo-gw-ibm...`) to your notepad for reference later
+    *   Copy the _full_ address (`eem-demo-gw-ibm...`) to your notepad for reference later.Please note this server endpoint correspond to the Event Gateway instance ***egw-group***, where the topic ***Option*** was published in the previous lab.
 
     *   When ready, switch back to the **IBM Event Processing** tab with your web browser
 
