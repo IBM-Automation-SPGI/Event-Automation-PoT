@@ -25,7 +25,7 @@ In this module, Focus' integration team will utilize **IBM Event Endpoint Manage
 <details>
 <summary><span style="color:lightblue">WHAT IS THE DIFFERENCE BETWEEN OpenAPI AND AsyncAPI?</span></summary>
 
-<p>OpenAPI and AsyncAPI both represent formalized specifications for describing APIs, but the data source feeding these APIs and the style in which that data is communicated differs between the two. **This is important in the context of IBM Event Endpoint Management.**</p>
+<p>OpenAPI and AsyncAPI both represent formalized specifications for describing APIs, but the data source feeding these APIs and the style in which that data is communicated differs between the two. <b>This is important in the context of IBM Event Endpoint Management</b>.</p>
 
 <p> · OpenAPI is designed for describing RESTful API endpoints, focusing on synchronous client-server communication: a client sends a request and waits for a direct response from a server. Therefore, OpenAPI is well-suited for standard web services where a client interacts with a server in a request-response model.</p>
 
@@ -44,16 +44,16 @@ In this module, Focus' integration team will utilize **IBM Event Endpoint Manage
 
 # Defining new Topics within IBM Event Streams
 
-Before the event stream data can be browsed as part of a self-service catalog, the integration team must first import into EEM the `STUDENTXX.ORDER` and `STUDENTXX.CUSTOMER` streams via _Topics_ created earlier within IBM Event Streams.
+Before the event stream data can be browsed as part of a self-service catalog, the integration team must first import into EEM the `ORDER` and `CUSTOMER` streams via _Topics_ created earlier within IBM Event Streams.
 
 
 1.  Since this is the first time that the integration team has needed to import Topics from IBM Event Streams, they must first register the cluster within IBM Event Endpoint Manager (EEM):
 
-    * Switch over to the EEM tab within your web browser
+    * Openthe EEM UI URL in a new tab within your web browser
 
     * Click the _Hide Welcome_ text to collapse the tutorials at the top of the page
 
-    * From the left-hand side of the interface, click **Topic**
+    * From the left-hand side of the interface, click **Manage Topics** icon
 
 
 
@@ -65,7 +65,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
     *   _Interaction_ settings: Click the **Consume events** and then **Next** to proceed
 
-    *   _Cluster connection_ settings: Click the **Add new cluster** button
+    *   _Cluster connection_ settings: Click the **Add cluster** button
 
 
 
@@ -131,9 +131,9 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 8.  Now select the Topics that will be made available for browsing within the Event Endpoint Management catalog.
 
-    *   Toggle (select) _both_ the  `CUSTOMERS.NEW` and `STUDENTXX.ORDERS` topics
+    *   Toggle (select) _both_ the  `CUSTOMERS.NEW` and `STUDENTXX.ORDERS` topics. Depending on the number of topics available in the kafka cluster, you may need to move page forward to find your corresponding `STUDENTXX.ORDERS` topic
 
-    *   Set the alias values to `STUDENTXX.CUSTOMERS` and `STUDENTXX.ORDERS`
+    *   Set the alias values to `STUDENTXX.CUSTOMERS` and `STUDENTXX.ORDERS`.
 
     *   When ready, click **Add Topic**
 
@@ -152,7 +152,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
     ---
 
-9.  From the EEM dashboad, drill down into **Topics** as before and click the name of the `STUDENTXX.CUSTOMERS` topic.
+9.  From the EEM dashboad, drill down or move page forward button into **Topics** table and to find and click on the name of the `STUDENTXX.CUSTOMERS` topic.
 
 
     [![](../images/2-9.png)](../images/2-9.png)<br><br><br>
@@ -230,6 +230,9 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 15. Leave the _Controls_ tab empty (`No data`) and click **Next** to proceed.
 
+  **About controls**: You can add controls to options so that you have greater management over how event data is presented to consumers. For instance, you can use the approval control to manage who can subscribe to your event endpoint, the schema filtering control ensures message structure consistency, and redaction hides sensitive data.
+
+  Options can use each of the control types in combination to allow you to manage how events are consumed or produced. More info about available controls can be found here: https://ibm.github.io/event-automation/eem/describe/option-controls/
 
     [![](../images/2-15.png)](../images/2-15.png)<br><br><br>
 
