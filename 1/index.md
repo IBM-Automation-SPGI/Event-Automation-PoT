@@ -149,7 +149,7 @@ Both the order management system and its payment gateway system are currently us
     <details>
     <summary><span style="color:lightblue">MQ-KAFKA CONNECTOR</span></summary>  
 
-    <p>IBM MQ allows applications, systems, services, and files to request and coordinate processing tasks — sending and receiving message data via messaging queues. **IBM Event Automation**'s Kafka integrations makes it possible to capture a continuous stream of events, representing state changes across one or multiple environments, and makes those events persistently available for retrieval.</p>
+    <p>IBM MQ allows applications, systems, services, and files to request and coordinate processing tasks — sending and receiving message data via messaging queues. <b>IBM Event Automation</b>'s Kafka integrations makes it possible to capture a continuous stream of events, representing state changes across one or multiple environments, and makes those events persistently available for retrieval.</p>
 
     <p>In combination, IBM MQ and Event Automation enable business-critical communications originating over MQ to be captured as events within Kafka topics, which can later be shared across the enterprise for fueling more responsive applications. IBM MQ-Kafka connectors support bi-directional connectivity between these two architectures. Clients of IBM Event Automation are fully supported for using MQ-Kafka connectors with the Event Streams capability of the platform. Support for the MQ-Kafka connector is also available for IBM clients with MQ Advanced entitlements. </p>
     </details>  
@@ -159,7 +159,7 @@ Both the order management system and its payment gateway system are currently us
 
 
 
-13. Open the **IBM Event Streams** tab using your web browser.<br>
+13. Open the **IBM Event Streams** UI on your web browser using the provided URL.<br>
 
 
 14. From the _IBM Event Streams_ dashboard, click the **Create a topic** tile.
@@ -198,14 +198,14 @@ Both the order management system and its payment gateway system are currently us
 
     ### Configuring a message bridge between IBM MQ and IBM Event Streams
 
-    Using the Apache Kafka connector framework, Focus Corporation's integration team will now need to configure an "event bridge" using Red Hat OpenShift. The task can be performed programmatically via the OpenShift console. The bridge configuration will include connectivity details for accessing both IBM MQ and IBM Event Streams.
+    Using the Apache Kafka connector framework, Focus Corporation's integration team will now need to configure an "event bridge". The task can be performed programmatically via the OpenShift console. The bridge configuration will include connectivity details for accessing both IBM MQ and IBM Event Streams.
 
     Once configured and deployed, the bridge will utilize the Apache Kafka connector framework to read messages from the `STUDENTXX.TO.KAFKA` _message queue_ and then publish those to the newly-created `STUDENTXX.ORDERS` _event stream_.
 
     ---
     <br>
 
-19. Return to the OpenShift container platform dashboard.
+19. Open the OpenShift UI URL in a new browser tab.
 
     From the **Home** page, click the **+** icon located in the top-right corner of the interface.
 
@@ -215,7 +215,7 @@ Both the order management system and its payment gateway system are currently us
 
 20. The interface will load an **Import YAML** configuration tool, with a black canvas awaiting input. Here you can supply _YAML_ (Yet Another Markup Language) or _JSON_ files to define new deployments on the OpenShift cluster.
 
-    The YAML definition of the Apache Kafka connector "bridge" has been prepared ahead of time. Copy and paste the following YAML _exactly_ as written into the **Import YAML** canvas (remember to change XX to your student ID):
+    The YAML definition of the Apache Kafka connector "bridge" has been prepared ahead of time. Copy and paste the following YAML _exactly_ as written into the **Import YAML** canvas (<span style="color:red;font-weight:bold;">remember to change XX to your student ID</span>):
 
 
     ```yaml
