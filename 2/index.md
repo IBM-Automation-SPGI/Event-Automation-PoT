@@ -230,9 +230,9 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 15. Leave the _Controls_ tab empty (`No data`) and click **Next** to proceed.
 
-  **About controls**: You can add controls to options so that you have greater management over how event data is presented to consumers. For instance, you can use the approval control to manage who can subscribe to your event endpoint, the schema filtering control ensures message structure consistency, and redaction hides sensitive data.
+    **About controls**: You can add controls to options so that you have greater management over how event data is processed by the Event Gateway. For instance, you can use the approval control to manage who can subscribe to your event endpoint, the schema filtering control ensures message structure consistency, and redaction hides sensitive data.
 
-  Options can use each of the control types in combination to allow you to manage how events are consumed or produced. More info about available controls can be found here: https://ibm.github.io/event-automation/eem/describe/option-controls/
+    Options can use each of the control types in combination to allow you to manage how events are consumed or produced. More info about available controls can be found here: https://ibm.github.io/event-automation/eem/describe/option-controls/
 
     [![](../images/2-15.png)](../images/2-15.png)<br><br><br>
 
