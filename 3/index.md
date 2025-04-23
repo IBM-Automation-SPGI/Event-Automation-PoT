@@ -222,18 +222,15 @@ If these conditions can be met, the marketing team will be able to create an act
 
     <br>
 
-16. Back within EP: the first tab, _Cluster Connection_, needs additional information to configure the node.
+16. Back within EP: the first step, _Cluster Connection_, needs additional information to configure the node.
 
     *   Under the _Connect to Kafka cluster_ header, paste the full address copied in Step 15 into the **Server**  field
 
     *   Click **Next**
 
+    <br>
 
-
-    [![](../images/3-16.png)](../images/3-16.png)<br><br><br>
-
-
-17. The second tab, _Access credentials_, requires authentication details for the EEM event source.
+17. The second step, _Access credentials_, requires authentication details for the EEM event source.
 
     *   Keep the **Select security mechanism** variable as its default value: `PLAIN`
 
@@ -243,7 +240,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     <br>
 
-18. The third tab, _Topic selection_, will ask which topic(s) to ingest from the event source.
+18. The third step, _Topic selection_, will ask which topic(s) to ingest from the event source.
 
     *   Available topics will already be displayed within the configuration tool
 
@@ -257,7 +254,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-19. The fourth tab, _Message Format_, will automatically recognize the expected JSON data structure of events ingested from the event source.
+19. The fourth step, _Message Format_, will automatically recognize the expected JSON data structure of events ingested from the event source.
 
     *   _Message format_ may be left as the `JSON` value
 
@@ -280,7 +277,7 @@ If these conditions can be met, the marketing team will be able to create an act
     [![](../images/event-source-format-2.png)](../images/event-source-format-2.png)
 
 
-20. For the next tab, _Key and headers_, leave defaults and click **Next**.
+20. For the next step, _Key and headers_, leave defaults and click **Next**.
 
 21. You will have a final opportunity to review and confirm the event source configuration.
 
@@ -328,12 +325,12 @@ If these conditions can be met, the marketing team will be able to create an act
     <br>
 
 
-25. Within the _Details_ tab, specify the value of **Node name** as `FilterLargeOrders`
+25. Within the _Details_ step, specify the value of **Node name** as `FilterLargeOrders`
 
     When ready, click **Next**.
     <br>
 
-26. The _Define filter_ tab will load next. To the right of the **Filter expression** field, click the **Assistant** drop-down menu to expose additional options.
+26. The _Define filter_ step will load next. To the right of the **Filter expression** field, click the **Assistant** drop-down menu to expose additional options.
 
 
     [![](../images/3-27a.png)](../images/3-27a.png)<br><br><br>
@@ -403,7 +400,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     <br>
 
-32. Within the _Details_ tab, set **Node name** equal to `DetectNewCustomerLargeOrders`
+32. Within the _Details_ step, set **Node name** equal to `DetectNewCustomerLargeOrders`
 
     When ready, click **Next** .
 
@@ -412,7 +409,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-33. Within the _Join conditions_ tab, activate the expression builder by click the **Assistant** drop-down menu. Set the following properties:
+33. Within the _Join conditions_ step, activate the expression builder by click the **Assistant** drop-down menu. Set the following properties:
 
     *   Specify property from 'New Customers': `customerid`
 
@@ -440,7 +437,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     <p> · Since the `New Customer` sign-up event must logically occur before a purchase, it is considered a triggering event</p>
 
-    <p> · Therefore, when a signal for an `Order` purchase of over **$25** (the detected event) is received, the JOIN logic condition will be triggered for the two event streams</p>
+    <p> · Therefore, when a signal for an `Order` purchase of over <b>$25</b> (the detected event) is received, the JOIN logic condition will be triggered for the two event streams</p>
     </details>
 
     <br>
@@ -455,7 +452,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     *   _Event to set the time window_: `New Customers (event-time)`
 
-    *   _Offset from event to start the time window_: `0` `HOUR(S)`
+    *   _Offset from event to start the time window_: `0` `HOUR(S)`. Make sure you change time unit from _minute(s)_ to _hour(s)_
 
     *   _Offset from event to end the time window_ : `24` `HOUR(S)`
 
