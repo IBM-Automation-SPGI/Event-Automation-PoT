@@ -471,7 +471,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ---
 
-35. Within the _Output properties_ tab, locate the `customerid` field. There are **two** (duplicate) copies of the same field at this time. Your objective will be to delete **ONE** of the two duplicate records, where the _Source_ is labelled as `New Customers`. Preserve the record where _Source_ is labelled as `FilterLargeOrders`.
+35. Within the _Output properties_ step, locate the `customerid` field. There are **two** (duplicate) copies of the same field at this time. Your objective will be to delete **ONE** of the two duplicate records, where the _Source_ is labelled as `New Customers`. Preserve the record where _Source_ is labelled as `FilterLargeOrders`.
 
     *   Click the round `—` sign to the left of the first `customerid` row, where the _Source_ is labelled as "New Customers", to remove the duplicate
 

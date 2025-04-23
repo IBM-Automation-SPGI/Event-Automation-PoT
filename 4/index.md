@@ -51,7 +51,7 @@ When new events are detected which match the marketing team's promotional criter
 
 
 
-5.  Within the _Details_ tab, adjust the following variables:
+5.  Within the _Details_ step, adjust the following variables:
 
     *   **Node name** : `OutputToMarketingApp`
 
@@ -62,13 +62,13 @@ When new events are detected which match the marketing team's promotional criter
 
 
 
-    The server has been pre-configured as part of the hands-on lab Setup module, generating the Apache Kafka events that will simulate both "historical" and "live" customer interactions with Focus' online store and payment gateway.
+    The environment has been pre-configured in advance, generating the Apache Kafka events that will simulate both "historical" and "live" customer interactions with Focus' online store and payment gateway.
 
     [![](../images/4-5.png)](../images/4-5.png)<br><br><br>
 
 
 
-6.  Select the **Accept certificates** toggle when asked if you wish to trust all security certificates issued by the event stream source.
+6.  If prompted, select the **Accept certificates** toggle to trust all security certificates issued by the event stream source.
 
     When ready, click **Next** .
 
@@ -77,7 +77,7 @@ When new events are detected which match the marketing team's promotional criter
 
 
 
-7.  Within the _Access credentials_ tab, modify the following variables:
+7.  Within the _Access credentials_ step, modify the following variables:
 
     *   **Username** : `es-admin`
 
@@ -91,11 +91,11 @@ When new events are detected which match the marketing team's promotional criter
 
 
 
-8.  Within the _Topic selection_ tab, you will be asked to specify which of the available endpoints topics should serve as a destination "sink."
+8.  Within the _Topic selection_ step, you will be asked to specify which of the available endpoints topics should serve as a destination "sink."
 
     In this situation, the goal is to send all valid customer interactions (which meet the purchasing criteria) to the marketing department's customer loyalty application.
 
-    *   Select the `STUDENTXX.LOYALTY.APP` topic - you may need to tab through the pages (3 total), or search for the Topic Name within the search bar provided at the top of the panel
+    *   Select the `STUDENTXX.LOYALTY.APP` topic - you may need to tab through the pages, or you can search for the Topic Name within the search bar provided at the top of the panel
 
     *   Click **Configure** to finalize the event destination
 
