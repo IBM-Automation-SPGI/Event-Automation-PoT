@@ -376,7 +376,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     <br>
 
 
-25. Return to the EEM dashboard and drill down into **Catalog**\[A\], then click the name `STUDENTXX.CUSTOMERS` from the table.
+25. Return to the EEM dashboard and drill down into **Catalog** menu\[A\], then locate  and click the name `STUDENTXX.CUSTOMERS` from the table.
 
 
     [![](../images/2-25.png)](../images/2-25.png)<br><br><br>
@@ -438,14 +438,14 @@ Before the event stream data can be browsed as part of a self-service catalog, t
     *   Alternatively, save the credentials as a JSON file (using the **Download as JSON** button) on your local machine
     <br>
 
-At this stage, responsibility can shift towards Focus Corporation's marketing team. Thanks to the hard work of the integration squad, the marketing department now has a fully configured, self-service catalog of event stream data available within EEM.
+ Thanks to the hard work of the integration squad, the marketing department now has a fully configured, self-service catalog of event stream data available within EEM. At this stage on, responsibility can shift towards Focus Corporation's marketing team. Please note that credentials generation could also be shifted to Focus Corporation's marketing team or other bussiness lines that could be interested in consuming these events by granting them to access the "Catalog" view provided by EEM, so that allowing a even more agile collaboration model
 
 * * *
 
 Next Steps
 ==========
 
-In the following module, Focus' marketing team will use _IBM Event Processing_ to correlate newly-created customer accounts with orders totaling over $100 within a 24-hour time window.
+In the following module, Focus' marketing team will use _IBM Event Processing_ to correlate newly-created customer accounts with orders totaling over $25 within a 24-hour time window.
 
 [Previous: Creating an event stream from MQ data using Event Streams](../1/index.md)  
 
