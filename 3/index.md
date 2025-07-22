@@ -14,7 +14,7 @@ Configuring the solution with Event Processing no-code editors
 
 * * *
 
-Using IBM Event Processing no-code editors to configure the solution
+Using IBM Event Processing no-code editor to configure the solution
 ====================================================================
 
 
@@ -150,7 +150,7 @@ If these conditions can be met, the marketing team will be able to create an act
     *   When ready, click **Next** to proceed
 
 
-    _Note that this is the same sample schema you supplied when configuring the event source within EEM in Module 2._
+    _Note that this is the same sample message you supplied when configuring the event source within EEM in Module 2._
 
     ```json
     {
@@ -295,7 +295,7 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ### Filtering event sources to match specific criteria
 
-    With the event source fully configured within EP, you can now begin tailoring the event processing flow to filter on orders where the value exceeds **$25** USD.
+    With the event sources fully configured within EP, you can now begin tailoring the event processing flow to filter on orders where the value exceeds **$25** USD.
 
     ---
 
@@ -471,7 +471,11 @@ If these conditions can be met, the marketing team will be able to create an act
 
     ---
 
-35. Within the _Output properties_ step, locate the `customerid` field. There are **two** (duplicate) copies of the same field at this time. Your objective will be to delete **ONE** of the two duplicate records, where the _Source_ is labelled as `New Customers`. Preserve the record where _Source_ is labelled as `FilterLargeOrders`.
+35. The _Matching Criteria_ step allows you to determine how the two input streams are combined, and which events are included in the result. In this case will use the default settings for the **join type** section, which results in a *Inner join* type. Click **Next**
+
+    [![](../images/3-35.png)](../images/3-35.png)<br><br>
+
+36. Within the _Output properties_ step, locate the `customerid` field. There are **two** (duplicate) copies of the same field at this time. Your objective will be to delete **ONE** of the two duplicate records, where the _Source_ is labelled as `New Customers`. Preserve the record where _Source_ is labelled as `FilterLargeOrders`.
 
     *   Click the round `—` sign to the left of the first `customerid` row, where the _Source_ is labelled as "New Customers", to remove the duplicate
 
@@ -486,11 +490,11 @@ If these conditions can be met, the marketing team will be able to create an act
 
     _When reviewing Output properties for duplicate fields, take note of the table's **Source** column. Duplicates will be produced by both the `New Customers` and `FilterLargeOrders` nodes. Only remove duplicates where the **Source** is listed as `New Customers`._
 
-    [![](../images/3-35a.png)](../images/3-35a.png)<br><br><br>
+    [![](../images/3-36a.png)](../images/3-36a.png)<br><br><br>
 
 
 
-36. Repeat the procedure for the `event_time` field, which is also duplicated by the JOIN:
+37. Repeat the procedure for the `event_time` field, which is also duplicated by the JOIN:
 
     *   Delete the `event_time` row where the _Source_ column is labelled as "New Customers"
 
@@ -500,9 +504,9 @@ If these conditions can be met, the marketing team will be able to create an act
 
 
 
-    [![](../images/3-36a.png)](../images/3-36a.png)
+    [![](../images/3-37a.png)](../images/3-37a.png)
 
-    [![](../images/3-36b.png)](../images/3-36b.png)<br><br><br>
+    [![](../images/3-37b.png)](../images/3-37b.png)<br><br><br>
 
 
 * * *

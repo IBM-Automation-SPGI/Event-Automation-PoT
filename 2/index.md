@@ -228,7 +228,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
 
 
-15. Leave the _Controls_ tab empty (`No data`) and click **Next** to proceed.
+15. Leave the _Controls_ tab empty (`No data`) and click **Save** to proceed.
 
     About **Controls**: You can add controls to options so that you have greater management over how event data is processed by the Event Gateway. For instance, you can use the approval control to manage who can subscribe to your event endpoint, the schema filtering control ensures message structure consistency, and redaction hides sensitive data.
 
@@ -242,8 +242,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
     *   Within the blue _Option Status_ field, click the **Publish** button
 
-    *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected.
-    Note: If you see a message in this panel stating that the gateway is not available or pending validation, click ***Cancel***, refresh the browser page (F5), and try again the **Publish** action on the **Option** definition.
+    *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected.<br/>**Note**: If you see a message in this panel stating that the gateway is not available or pending validation, click ***Cancel***, refresh the browser page (F5), and try again the **Publish** action on the **Option** definition.
 
     *   When ready, click **Publish**\[C\] to finalize publication of the `STUDENTXX.CUSTOMERS` topic
 
@@ -352,8 +351,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 
     *   Within the blue _Option Status_ field, click the **Publish** button
 
-    *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected
-    Note: If you see a message in this panel stating that the gateway is not available or pending validation, click ***Cancel***, refresh the browser page (F5), and try again the **Publish** action on the **Option** definition.
+    *   Further down the panel, under the _Available gateways_ field, verify that the `egw-group` option is pre-selected.<br/>**Note**: If you see a message in this panel stating that the gateway is not available or pending validation, click ***Cancel***, refresh the browser page (F5), and try again the **Publish** action on the **Option** definition.
 
     *   When ready, click **Publish** to finalize publication of the `STUDENTXX.ORDERS` topic
 
@@ -445,7 +443,7 @@ Before the event stream data can be browsed as part of a self-service catalog, t
 Next Steps
 ==========
 
-In the following module, Focus' marketing team will use _IBM Event Processing_ to correlate newly-created customer accounts with orders totaling over $25 within a 24-hour time window.
+In the following module, Focus' marketing team will use _IBM Event Processing_ to correlate newly-created customer accounts with orders for a given ammount, within a 24-hour time window.
 
 [Previous: Creating an event stream from MQ data using Event Streams](../1/index.md)  
 

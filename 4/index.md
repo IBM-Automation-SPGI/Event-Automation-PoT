@@ -68,7 +68,7 @@ When new events are detected which match the marketing team's promotional criter
 
 
 
-6.  If prompted, select the **Accept certificates** toggle to trust all security certificates issued by the event stream source.
+6.  If prompted (it could happen or not, depending on the cluster configuration ), select the **Accept certificates** toggle to trust all security certificates issued by the event stream source.
 
     When ready, click **Next** .
 
@@ -130,12 +130,13 @@ When new events are detected which match the marketing team's promotional criter
 
     *   It will take a few moments for the events to begin populating the table
 
-    *   After several hours, the table will be populated with pages of entries (cycle through these using the arrows or drop-down page selector)
+    *   The table will be populated with pages of entries (cycle through these using the arrows or drop-down page selector)
 
     *   Continue to verify the detected events until satisfied with the historical event data results
 
     *   When ready, stop the flow by clicking the **Stop** button in the top-right corner of the page
 
+    *   Additionally, you could go to the Event Streams UI and check the contents of the STUDENTXX.LOYALTY.APP. It should contain the set of events produced during the flow run  
 
     <details>
     <summary><span style="color:orange">TROUBLESHOOTING — UNABLE TO CONNECT TO RESULTS</span></summary>
@@ -152,6 +153,7 @@ When new events are detected which match the marketing team's promotional criter
 
     [![](../images/es-final-output.png)](../images/es-final-output.png)<br><br><br>
 
+    *   Additionally, you go to the Event Streams UI and check the contents of the STUDENTXX.LOYALTY.APP. It should contain the
 
 * * *
 
