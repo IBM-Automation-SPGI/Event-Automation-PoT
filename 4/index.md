@@ -136,7 +136,7 @@ When new events are detected which match the marketing team's promotional criter
 
     *   When ready, stop the flow by clicking the **Stop** button in the top-right corner of the page
 
-    *   Additionally, you could go to the Event Streams UI and check the contents of the STUDENTXX.LOYALTY.APP. It should contain the set of events produced during the flow run  
+    *   Additionally, you could go to the Event Streams UI and check the contents of the STUDENTXX.LOYALTY.APP topic. It should contain the set of events produced during the flow run  
 
     <details>
     <summary><span style="color:orange">TROUBLESHOOTING — UNABLE TO CONNECT TO RESULTS</span></summary>
@@ -152,8 +152,6 @@ When new events are detected which match the marketing team's promotional criter
     <br>
 
     [![](../images/es-final-output.png)](../images/es-final-output.png)<br><br><br>
-
-    *   Additionally, you go to the Event Streams UI and check the contents of the STUDENTXX.LOYALTY.APP. It should contain the
 
 * * *
 
